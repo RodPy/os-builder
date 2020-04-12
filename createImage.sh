@@ -9,11 +9,11 @@ sudo apt install squashfs-tools genisoimage
 # 2 Move or copy it into an empty directory
 
 mkdir ~/livecdtmp
-mv focal-desktop-amd64 ~/livecdtmp
+mv focal-desktop-amd64.iso ~/livecdtmp
 
 #Extract the CD .iso contents
 #Mount the Desktop .iso
-
+cd livecdtmp
 mkdir mnt
 sudo mount -o loop focal-desktop-amd64.iso mnt
 
@@ -55,3 +55,4 @@ find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo t
 
 #Create the ISO image
 sudo mkisofs -D -r -V "$IMAGE_NAME" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../ubuntu-20.04-custom.iso .
+#test image qemu-system-x86_64 -cdrom ubuntu-20.04-custom.iso
