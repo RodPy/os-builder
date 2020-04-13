@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh root
 
 # Install pre-requisities
 sudo apt install squashfs-tools genisoimage
@@ -29,27 +29,24 @@ sudo mv squashfs-root edit
 #Producing the CD image
 #Assembling the file system
 #Regenerate manifest
-chmod +w extract-cd/casper/filesystem.manifest
+sudo chmod +w extract-cd/casper/filesystem.manifest
 sudo cp extract-cd/casper/filesystem.manifest extract-cd/casper/filesystem.manifest-desktop
 sudo sed -i '/ubiquity/d' extract-cd/casper/filesystem.manifest-desktop
 sudo sed -i '/casper/d' extract-cd/casper/filesystem.manifest-desktop
 
 #Compress filesystem
-sudo mksquashfs edit extract-cd/casper/filesystem.squashfs -nolzma
-
 #To get the most compression possible at the cost of compression time, you can use the xz method and it is best to exclude the edit / boot directory entirely:
 
 sudo mksquashfs edit extract-cd/casper/filesystem.squashfs -comp xz -e edit/boot
 
 #Update the filesystem.size file, which is needed by the installer:
 
-sudo su
-printf $(du -sx --block-size=1 edit | cut -f1) > extract-cd/casper/filesystem.size
-exit
+sudo printf $(du -sx --block-size=1 edit | cut -f1) > extract-cd/casper/filesystem.size
+
 
 #Remove old md5sum.txt and calculate new md5 sums
 
-cd extract-cd
+cd extract-cd/
 sudo rm md5sum.txt
 find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee md5sum.txt
 
