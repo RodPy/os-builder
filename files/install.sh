@@ -7,3 +7,4 @@ apt update
 yes | apt install vim
 yes | apt install sucrose
 yes | apt install gcompris-qt
+yes | apt install flatpak
