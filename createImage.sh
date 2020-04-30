@@ -56,6 +56,7 @@ sudo chroot edit ln -s /bin/true /sbin/initctl
 sudo cp ~/livecdtmp/files/install.sh ~/livecdtmp/edit/
 sudo chroot edit sudo sh install.sh
 sudo chroot edit rm -fvR install.sh
+sudo cp -r ~/livecdtmp/files/Activities/* ~/livecdtmp/edit/usr/share/sugar/activities/
 
 #Be sure to remove any temporary files which are no longer needed
 sudo chroot edit apt clean
