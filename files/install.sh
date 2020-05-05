@@ -8,7 +8,7 @@ yes | apt install vim
 yes | apt install sucrose
 yes | apt install gcompris-qt
 yes | apt install flatpak
-yes | apt install gnome-software-plugin-flatpak 
+yes | apt install gnome-software-plugin-flatpak
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
