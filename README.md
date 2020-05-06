@@ -7,9 +7,13 @@ The output ISO is based on Ubuntu architecture. It uses Ubuntu 20.04 as standard
 - [Download de iso base Ubuntu 20.04](https://releases.ubuntu.com/20.04/)
 - Clone this repository at /home/youruser
 - Cd in this repository
-```cd os-builder ```
+```
+cd os-builder 
+```
 - Execute the script
-```$ sh build.sh```
+```
+$ sh build.sh
+```
 
 ## Packages
 - Vim
