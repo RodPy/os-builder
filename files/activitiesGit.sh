@@ -1,7 +1,4 @@
-#! /bin/sh root
-
-sudo mkdir downAct
-cd downAct/
+#!/bin/sh root
 
 #-   1 -
 # Turtle Artivity
@@ -45,7 +42,7 @@ git clone https://github.com/sugarlabs/memorize-activity.git
 
 #-   11 -
 # Words Artivity
-git clone https://github.com/sugarlabs/words-activity.git 
+git clone https://github.com/sugarlabs/words-activity.git
 
 #-   12 -
 # Maze Artivity

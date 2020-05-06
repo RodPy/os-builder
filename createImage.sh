@@ -10,14 +10,19 @@ sudo apt install squashfs-tools genisoimage
 currentuser="$( whoami)"
 cd ~
 mkdir ~/livecdtmp
-mv focal-desktop-amd64.iso ~/livecdtmp
-sudo cp -r /home/$currentuser/os-builder/files ~/livecdtmp
+mv ubuntu-20.04-desktop-amd64.iso ~/livecdtmp
 
+mkdir /home/$currentuser/os-builder/files/Activities
+cd /home/$currentuser/os-builder/files/Activities
+sh /home/$currentuser/os-builder/files/activitiesGit.sh
+sudo cp -r /home/$currentuser/os-builder/files ~/livecdtmp
+sudo rm -r /home/$currentuser/os-builder/files/Activities/
+cd ~
 #Extract the CD .iso contents
 #Mount the Desktop .iso
 cd livecdtmp
 mkdir mnt
-sudo mount -o loop focal-desktop-amd64.iso mnt
+sudo mount -o loop ubuntu-20.04-desktop-amd64.iso mnt
 
 
 #Extract .iso contents into dir 'extract-cd'
