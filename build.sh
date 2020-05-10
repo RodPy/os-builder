@@ -12,11 +12,11 @@ cd ~
 mkdir ~/livecdtmp
 mv ubuntu-20.04-desktop-amd64.iso ~/livecdtmp
 
-mkdir /home/$currentuser/os-builder/files/Activities
-cd /home/$currentuser/os-builder/files/Activities
-sh /home/$currentuser/os-builder/files/activitiesGit.sh
-sudo cp -r /home/$currentuser/os-builder/files ~/livecdtmp
-sudo rm -r /home/$currentuser/os-builder/files/Activities/
+mkdir /home/$currentuser/os-builder/config/Activities
+cd /home/$currentuser/os-builder/config/Activities
+sh /home/$currentuser/os-builder/config/activitiesGit.sh
+sudo cp -r /home/$currentuser/os-builder/config ~/livecdtmp
+sudo rm -r /home/$currentuser/os-builder/config/Activities/
 cd ~
 #Extract the CD .iso contents
 #Mount the Desktop .iso
@@ -35,15 +35,15 @@ sudo mv squashfs-root edit
 
 #Prepare and chroot
 #If you need network connectivity within chroot
-sudo cp /home/$currentuser/os-builder/files/resolv.conf ~/livecdtmp/edit/etc/
-sudo cp /home/$currentuser/os-builder/files/sources.list ~/livecdtmp/edit/etc/apt/
+sudo cp /home/$currentuser/os-builder/config/resolv.conf ~/livecdtmp/edit/etc/
+sudo cp /home/$currentuser/os-builder/config/sources.list ~/livecdtmp/edit/etc/apt/
 
 #pull your host's resolvconf info into the chroot
 cd ~/livecdtmp
 sudo mount -o bind /run/ edit/run
 
 #copy the hosts file
-sudo cp /home/$currentuser/os-builder/files/hosts ~/livecdtmp/edit/etc/
+sudo cp /home/$currentuser/os-builder/config/hosts ~/livecdtmp/edit/etc/
 
 #Mount important directories of your host system to the edit directory
 cd ~/livecdtmp
@@ -58,10 +58,10 @@ sudo chroot edit dpkg-divert --local --rename --add /sbin/initctl
 sudo chroot edit ln -s /bin/true /sbin/initctl
 
 #install software
-sudo cp ~/livecdtmp/files/install.sh ~/livecdtmp/edit/
+sudo cp ~/livecdtmp/config/install.sh ~/livecdtmp/edit/
 sudo chroot edit sudo sh install.sh
 sudo chroot edit rm -fvR install.sh
-sudo cp -r ~/livecdtmp/files/Activities/* ~/livecdtmp/edit/usr/share/sugar/activities/
+sudo cp -r ~/livecdtmp/config/Activities/* ~/livecdtmp/edit/usr/share/sugar/activities/
 
 #Be sure to remove any temporary files which are no longer needed
 sudo chroot edit apt clean
