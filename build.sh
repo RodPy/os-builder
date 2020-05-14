@@ -5,7 +5,7 @@ sudo apt install squashfs-tools genisoimage
 
 #Obtain the base system
 # 1 Download an official Desktop image from http://cdimage.ubuntu.com/daily-live/current/
-
+wget -r --no-parent --user-agent "user" http://paraguayeduca.org/test/ubuntu-20.04-desktop-amd64.iso
 # 2 Move or copy it into an empty directory
 currentuser="$( whoami)"
 cd ~
