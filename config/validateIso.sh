@@ -17,5 +17,5 @@ if [ ! -f $isoName]; then
 elif [ "$(getSha256sum $isoName)" = "$isoHash" ]; then
     echo "Success: $isoName matches sha256sum"
 else
-    error "$filename doesn't match sha256sum"
+    error "$isoName doesn't match sha256sum"
 fi

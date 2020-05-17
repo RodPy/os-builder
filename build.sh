@@ -1,18 +1,32 @@
 #!/bin/sh root
 
+currentuser="$(whoami)"
+
 # Install pre-requisities
 sudo apt install squashfs-tools genisoimage
 sudo apt install hashalot
 
 #Obtain the base system
-# 1 Download Ubuntu 20.04 desktop image
-wget --no-parent --user-agent "user" http://paraguayeduca.org/test/ubuntu-20.04-desktop-amd64.iso
+# 1 Download Ubuntu 20.04 desktop image in config to validate it
+wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/config/ http://paraguayeduca.org/test/ubuntu-20.04-desktop-amd64.iso
 
 #Verify that the image has been downloaded correctly
 sudo sh /home/$currentuser/os-builder/config/validateIso.sh
 
+#Capture return code from validateIso.sh
+if [ $? -eq 0 ]; then
+    echo "OK"
+else
+    exit 1
+fi
+
+#Move the downloaded image to the home
+sudo mv /home/$currentuser/os-builder/ubuntu-20.04-desktop-amd64.iso ~
+
+exit 1
+echo "chau"
+
 # 2 Move or copy it into an empty directory
-currentuser="$( whoami)"
 cd ~
 mkdir ~/livecdtmp
 mv ubuntu-20.04-desktop-amd64.iso ~/livecdtmp
@@ -94,7 +108,7 @@ sudo sed -i '/casper/d' extract-cd/casper/filesystem.manifest-desktop
 sudo mksquashfs edit extract-cd/casper/filesystem.squashfs -comp xz -e edit/boot
 
 #Update the filesystem.size file, which is needed by the installer:
-sudo printf $(du -sx --block-size=1 edit | cut -f1) > extract-cd/casper/filesystem.size
+sudo printf $(du -sx --block-size=1 edit | cut -f1) >extract-cd/casper/filesystem.size
 
 #Remove old md5sum.txt and calculate new md5 sums
 cd extract-cd/
