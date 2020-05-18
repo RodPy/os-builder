@@ -1,13 +1,29 @@
 #!/bin/sh root
 
+currentuser="$(whoami)"
+
 # Install pre-requisities
 sudo apt install squashfs-tools genisoimage
+sudo apt install hashalot
 
 #Obtain the base system
-# 1 Download an official Desktop image from http://cdimage.ubuntu.com/daily-live/current/
+# 1 Download Ubuntu 20.04 desktop image in config to validate it
+wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/test/ubuntu-20.04-desktop-amd64.iso
+
+#Verify that the image has been downloaded correctly
+sudo sh /home/$currentuser/os-builder/config/validateIso.sh
+
+#Capture return code from validateIso.sh
+if [ $? -eq 0 ]; then
+    echo "OK"
+else
+    exit 1
+fi
+
+#Move the downloaded image to the home
+sudo mv /home/$currentuser/os-builder/ubuntu-20.04-desktop-amd64.iso ~
 
 # 2 Move or copy it into an empty directory
-currentuser="$( whoami)"
 cd ~
 mkdir ~/livecdtmp
 mv ubuntu-20.04-desktop-amd64.iso ~/livecdtmp
@@ -18,12 +34,12 @@ sh /home/$currentuser/os-builder/config/activitiesGit.sh
 sudo cp -r /home/$currentuser/os-builder/config ~/livecdtmp
 sudo rm -r /home/$currentuser/os-builder/config/Activities/
 cd ~
+
 #Extract the CD .iso contents
 #Mount the Desktop .iso
 cd livecdtmp
 mkdir mnt
 sudo mount -o loop ubuntu-20.04-desktop-amd64.iso mnt
-
 
 #Extract .iso contents into dir 'extract-cd'
 mkdir extract-cd
@@ -51,7 +67,6 @@ sudo mount --bind /dev/ edit/dev
 sudo chroot edit mount -t proc none /proc
 sudo chroot edit mount -t sysfs none /sys
 sudo chroot edit mount -t devpts none /dev/pts
-
 
 #before installing or upgrading packages you need to run
 sudo chroot edit dpkg-divert --local --rename --add /sbin/initctl
@@ -90,12 +105,9 @@ sudo sed -i '/casper/d' extract-cd/casper/filesystem.manifest-desktop
 sudo mksquashfs edit extract-cd/casper/filesystem.squashfs -comp xz -e edit/boot
 
 #Update the filesystem.size file, which is needed by the installer:
-
-sudo printf $(du -sx --block-size=1 edit | cut -f1) > extract-cd/casper/filesystem.size
-
+sudo printf $(du -sx --block-size=1 edit | cut -f1) >extract-cd/casper/filesystem.size
 
 #Remove old md5sum.txt and calculate new md5 sums
-
 cd extract-cd/
 sudo rm md5sum.txt
 find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee md5sum.txt
