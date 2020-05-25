@@ -100,7 +100,7 @@ git clone https://github.com/sugarlabs/help-activity.git
 
 #-   25 -
 # Fraction Bounce Artivity
-git clone https://github.com/sugarlabs/fractionbounce.git 
+git clone https://github.com/sugarlabs/fractionbounce.git
 
 #-   26 -
 # Derecho a Transitar Artivity
@@ -147,8 +147,8 @@ git clone https://github.com/sugarlabs/find-words-activity.git
 git clone https://github.com/sugarlabs/physics.git
 
 #-   37 -
-# Fototoon Activity 
-git clone https://github.com/sugarlabs/fototoon-activity.git 
+# Fototoon Activity
+git clone https://github.com/sugarlabs/fototoon-activity.git
 
 #-   38 -
 # Chart Activity
@@ -179,35 +179,35 @@ git clone git://git.sugarlabs.org/kukuanakula/mainline.git
 git clone https://github.com/sugarlabs/speak.git
 
 #-   45 -
-#Tux PaintActivity 
+#Tux PaintActivity
 git clone  https://github.com/sugarlabs/tuxpaint-wrapper-activity.git
 
-#- 46 - 
-#Etoys  Activity 
+#- 46 -
+#Etoys  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git Etoys.activity
 
-#- 47 - 
-#GCompris  Activity 
+#- 47 -
+#GCompris  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git GCompris.activity
 
-#- 48 - 
-#Geogebra.  Activity 
+#- 48 -
+#Geogebra.  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git Geogebra.activity
 
-#- 49 - 
-#/Jclic  Activity 
+#- 49 -
+#/Jclic  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git Jclic.activity
 
-#- 50 - 
-#VNCServer  Activity 
+#- 50 -
+#VNCServer  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git VNCServer.activity
 
-#- 51 - 
-#Scratch  Activity 
+#- 51 -
+#Scratch  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git Scratch.activity
 
-#- 52 - 
-#TurtleBots  Activity 
+#- 52 -
+#TurtleBots  Activity
 git clone https://github.com/rrojasPy/Sugar_Activities.git TurtleBots.activity
 
 echo "52/52 OK"

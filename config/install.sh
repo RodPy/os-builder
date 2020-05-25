@@ -1,14 +1,15 @@
 #!/bin/sh root
 apt update
 echo "deb [trusted=yes arch=amd64]" \
-        "http://dev.laptop.org/~quozl/.us focal main" \
-            > /etc/apt/sources.list.d/olpc.sources.list
-apt update
-yes | apt install vim
-yes | apt install sucrose
-yes | apt install gcompris-qt
-yes | apt install flatpak
-yes | apt install gnome-software-plugin-flatpak
+    "http://dev.laptop.org/~quozl/.us focal main" \
+    >/etc/apt/sources.list.d/olpc.sources.list
+
+sudo add-apt-repository -y ppa:crolon/activities
+
+apt-get update
+
+#Install pyedu dependencies
+apt install -y pyedu
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 

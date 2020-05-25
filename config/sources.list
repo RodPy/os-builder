@@ -18,9 +18,9 @@ deb http://py.archive.ubuntu.com/ubuntu/ focal universe
 deb http://py.archive.ubuntu.com/ubuntu/ focal-updates universe
 # deb-src http://py.archive.ubuntu.com/ubuntu/ focal-updates universe
 
-## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu 
-## team, and may not be under a free licence. Please satisfy yourself as to 
-## your rights to use the software. Also, please note that software in 
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
 ## multiverse WILL NOT receive any review or updates from the Ubuntu
 ## security team.
 deb http://py.archive.ubuntu.com/ubuntu/ focal multiverse
