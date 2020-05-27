@@ -2,7 +2,7 @@
 
 currentuser="$(whoami)"
 
-#Mv original iso in home
+#Mv original iso into home
 sudo mv /home/$currentuser/livecdtmp/ubuntu-20.04-desktop-amd64.iso ~
 
 cd /home/$currentuser/livecdtmp

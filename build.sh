@@ -8,7 +8,7 @@ sudo apt install hashalot
 
 #Obtain the base system
 # 1 Download Ubuntu 20.04 desktop image in config to validate it
-#wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/descarga/ubuntu-20.04-desktop-amd64.iso
+wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/descarga/ubuntu-20.04-desktop-amd64.iso
 
 #Verify that the image has been downloaded correctly
 sudo sh /home/$currentuser/os-builder/config/validateIso.sh
