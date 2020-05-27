@@ -8,7 +8,7 @@ sudo apt install hashalot
 
 #Obtain the base system
 # 1 Download Ubuntu 20.04 desktop image in config to validate it
-wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/descarga/ubuntu-20.04-desktop-amd64.iso
+#wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/descarga/ubuntu-20.04-desktop-amd64.iso
 
 #Verify that the image has been downloaded correctly
 sudo sh /home/$currentuser/os-builder/config/validateIso.sh
@@ -113,7 +113,7 @@ sudo rm md5sum.txt
 find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee md5sum.txt
 
 #Create the ISO image
-sudo mkisofs -D -r -V "$IMAGE_NAME" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../ubuntu-20.04-sugar.iso .
+sudo mkisofs -D -r -V "$IMAGE_NAME" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o /home/$currentuser/ubuntu-20.04-sugar.iso .
 
 #Clean home directory after created the iso
-sudo sh /home/$currentuser/os-builder/config/cleanHome.sh
+sh /home/$currentuser/os-builder/config/cleanHome.sh
