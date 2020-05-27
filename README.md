@@ -1,12 +1,24 @@
 # Os-Bulilder
 ## Introduction
-This project contains a script to customize a linux image based on Ubuntu 20.04.
+This project contains a script to customize a linux image based on Ubuntu 20.04. <br/>
+The created iso will have all the features detailed below and will be hosted in your /home directory.
 ## Architecture
 The output ISO is based on Ubuntu architecture. It uses Ubuntu 20.04 as standard desktop environment.
+
+## System Requirements
+- At least 15 GB of free space
+- At least 2 GB RAM
+- An Ubuntu kernel with squashfs support.
+- squashfs-tools, to unpack and recompile the 'live' filesystem (This package is included to install in build.sh)
+- genisoimage, to compile a new ISO image (This package is included to install in build.sh)
+- Is assumed that: git is installed on your system
+
 ## Build
-- [Download de iso base Ubuntu 20.04](https://releases.ubuntu.com/20.04/)
 - Clone this repository at /home/youruser
-- Cd in this repository
+ ```
+https://github.com/ParaguayEduca/os-builder.git
+```
+- Change to cloned directory
 ```
 cd os-builder
 ```
@@ -22,61 +34,61 @@ $ sh build.sh
 - Flatpak
 - Gnome-software-plugin-flatpak
 ## Sugar Activities
-| N  | Activity            | 
-| -- | ------------------- | 
-| 1  | Turtle Art          | 
+| N  | Activity            |
+| -- | ------------------- |
+| 1  | Turtle Art          |
 | 2  | clock               |
-| 3  | Finance             | 
-| 4  | Write               | 
-| 5  | Read                | 
-| 6  | Abacus              | 
-| 7  | Imageviewer         | 
-| 8  | Paint               | 
+| 3  | Finance             |
+| 4  | Write               |
+| 5  | Read                |
+| 6  | Abacus              |
+| 7  | Imageviewer         |
+| 8  | Paint               |
 | 9  | Diccionario         |
 | 10 | Memorize            |
-| 11 | Words               | 
-| 12 | Maze                | 
-| 13 | Calculate           | 
-| 14 | Chat                | 
-| 15 | Moon                | 
+| 11 | Words               |
+| 12 | Maze                |
+| 13 | Calculate           |
+| 14 | Chat                |
+| 15 | Moon                |
 | 16 | Story               |
-| 17 | Measure             | 
-| 18 | MapMent             | 
+| 17 | Measure             |
+| 18 | MapMent             |
 | 19 | IcanRead            |
-| 20 | XOeditor            | 
-| 21 | Books               | 
-| 22 | Gears               | 
-| 23 | Develop             | 
-| 24 | Help                | 
+| 20 | XOeditor            |
+| 21 | Books               |
+| 22 | Gears               |
+| 23 | Develop             |
+| 24 | Help                |
 | 25 | Máquina de Disco    |
-| 26 | Derecho a transitar | 
-| 27 | Terminal            | 
-| 28 | Jam Media           |      
-| 29 | VncLauncher         |         
-| 30 | JClic               |         
+| 26 | Derecho a transitar |
+| 27 | Terminal            |
+| 28 | Jam Media           |
+| 29 | VncLauncher         |
+| 30 | JClic               |
 | 31 | TurtleConfusion     |
-| 32 | Navegar             |  
-| 33 | TuxPaint            | 
-| 34 | Peppy               | 
-| 35 | Servidor VNC        |  
-| 36 | Gcompris            |     
-| 37 | Etoys               |       
+| 32 | Navegar             |
+| 33 | TuxPaint            |
+| 34 | Peppy               |
+| 35 | Servidor VNC        |
+| 36 | Gcompris            |
+| 37 | Etoys               |
 | 38 | TurtleBots          |
-| 39 | GeoGebra            |        
-| 40 | Scratch             |       
+| 39 | GeoGebra            |
+| 40 | Scratch             |
 | 41 | Letter Match        |
-| 42 | Typing Turtle       | 
-| 43 | Teclado Musica      |   
-| 44 | Speak               | 
-| 45 | Encuesta            | 
-| 46 | Cronómetro          | 
-| 47 | FindWords           |         
+| 42 | Typing Turtle       |
+| 43 | Teclado Musica      |
+| 44 | Speak               |
+| 45 | Encuesta            |
+| 46 | Cronómetro          |
+| 47 | FindWords           |
 | 48 | Physical            |
 | 49 | FotoToon            |
-| 50 | Graficar            |       
-| 51 | Implode             |  
-| 52 | Kuku Anakula        | 
+| 50 | Graficar            |
+| 51 | Implode             |
+| 52 | Kuku Anakula        |
 | 53 | Letters             |
-| 54 | Obras               | 
-| 55 | RebotaFracciones    | 
+| 54 | Obras               |
+| 55 | RebotaFracciones    |
 | 56 | Rompecabezas        |
