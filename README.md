@@ -9,14 +9,14 @@ The output ISO is based on Ubuntu architecture. It uses Ubuntu 20.04 as standard
 - At least 15 GB of free space
 - At least 2 GB RAM
 - An Ubuntu kernel with squashfs support.
-- squashfs-tools, to unpack and recompile the 'live' filesystem (This package is included to install in build.sh)
-- genisoimage, to compile a new ISO image (This package is included to install in build.sh)
+- squashfs-tools, to unpack and recompile the 'live' filesystem (This package is included to in build.sh file)
+- genisoimage, to compile a new ISO image (This package is included to in build.sh file)
 - Is assumed that: git is installed on your system
 
 ## Build
 - Clone this repository at /home/youruser
  ```
-https://github.com/ParaguayEduca/os-builder.git
+git https://github.com/ParaguayEduca/os-builder.git
 ```
 - Change to cloned directory
 ```
