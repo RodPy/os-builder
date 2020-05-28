@@ -4,12 +4,12 @@ echo "deb [trusted=yes arch=amd64]" \
     "http://dev.laptop.org/~quozl/.us focal main" \
     >/etc/apt/sources.list.d/olpc.sources.list
 
-sudo add-apt-repository -y ppa:crolon/activities
+sudo add-apt-repository -y ppa:pyeduca/pyeducadependencies
 
 apt-get update
 
 #Install pyedu dependencies
-apt install -y pyedu
+apt install -y pyedu-dependencies
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
