@@ -4,7 +4,7 @@
 # Turtle Art Artivity
  git clone https://github.com/sugarlabs/turtleart-activity.git
 
-echo "1/52 OK"
+echo "1/53 OK"
 #-   2 -
 # Clock Artivity
  git clone https://github.com/sugarlabs/clock-activity.git
@@ -41,7 +41,7 @@ git clone https://github.com/sugarlabs/diccionario-guarani-castellano-activity.g
 #-   10 -
 # Memorize Artivity
 git clone https://github.com/sugarlabs/memorize-activity.git
-echo "10/52 OK"
+echo "10/53 OK"
 #-   11 -
 # Words Artivity
 git clone https://github.com/sugarlabs/words-activity.git
@@ -81,7 +81,7 @@ git clone https://github.com/sugarlabs/i-can-read-activity.git
 #-   20 -
 # xoeditor Artivity
 git clone https://github.com/sugarlabs/xoeditor-activity.git
-echo "20/52 OK"
+echo "20/53 OK"
 #-   21 -
 # Get Books Artivity
 git clone https://github.com/sugarlabs/get-books-activity.git
@@ -121,7 +121,7 @@ git clone https://github.com/sugarlabs/VncLauncher.git
 #-   30 -
 # Letter Matchs Activity
 git clone https://github.com/sugarlabs/lettermatch.git
-echo "30/52 OK"
+echo "30/53 OK"
 #-   31 -
 # Turtle confusion Activity
 git clone https://github.com/sugarlabs/activity-turtle-confusion.git
@@ -161,7 +161,7 @@ git clone https://github.com/sugarlabs/implode-activity.git
 #-   40 -
 # Rompecabezas Activity
 git clone https://github.com/sugarlabs/jigsaw-puzzle-branch.git
-echo "40/52 OK"
+echo "40/53 OK"
 #-   41 -
 # Activity Portfolio
 git clone https://github.com/sugarlabs/portfolio-activity.git
@@ -184,30 +184,36 @@ git clone  https://github.com/sugarlabs/tuxpaint-wrapper-activity.git
 
 #- 46 -
 #Etoys  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git Etoys.activity
+git clone https://github.com/RodPy/Etoys.activity.git
 
 #- 47 -
 #GCompris  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git GCompris.activity
+git clone https://github.com/RodPy/GCompris.activity.git
 
 #- 48 -
 #Geogebra.  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git Geogebra.activity
+git clone https://github.com/RodPy/Geogebra.activity.git
 
 #- 49 -
-#/Jclic  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git Jclic.activity
+#Jclic  Activity
+git clone https://github.com/sugarlabs/JClic.git
+
+echo "50/53 OK"
 
 #- 50 -
 #VNCServer  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git VNCServer.activity
+git clone https://github.com/RodPy/VNCServer.activity.git
 
 #- 51 -
 #Scratch  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git Scratch.activity
+git clone https://github.com/RodPy/Scratch.activity.git
 
 #- 52 -
 #TurtleBots  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git TurtleBots.activity
+git clone https://github.com/RodPy/Turtlebots.activity.git
 
-echo "52/52 OK"
+#- 53 -
+#Java  Activity
+git clone https://github.com/sugarlabs/Java.git
+
+echo "53/53 OK"
