@@ -80,23 +80,16 @@ git clone https://github.com/sugarlabs/Java.git
 
 
 #Etoys  Activity
-git clone https://github.com/RodPy/Etoys.activity.git
+git clone https://github.com/ParaguayEduca/etoys.activity.git
 
 #-  -
 #GCompris  Activity
-git clone https://github.com/RodPy/GCompris.activity.git
+git clone https://github.com/ParaguayEduca/gcompris-activity.git
 
 #-  -
 #Geogebra.  Activity
-git clone https://github.com/RodPy/Geogebra.activity.git
-
-#VNCServer  Activity
-git clone https://github.com/RodPy/VNCServer.activity.git
+git clone https://github.com/ParaguayEduca/geogebra-activity.git
 
 #-  -
 #Scratch  Activity
-git clone https://github.com/RodPy/Scratch.activity.git
-
-#-  -
-#TurtleBots  Activity
-git clone https://github.com/RodPy/Turtlebots.activity.git
+git clone https://github.com/ParaguayEduca/scratch-activity.git
