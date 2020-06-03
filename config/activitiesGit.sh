@@ -7,11 +7,11 @@ git clone https://github.com/sugarlabs/diccionario-guarani-castellano-activity.g
 
 #- 2 -
 # Help Artivity
-git clone https://github.com/sugarlabs/help-activity.git
+git clone -b v20 https://github.com/sugarlabs/help-activity.git
 
 #- 3 -
 # Letter Matchs Activity
-git clone https://github.com/sugarlabs/lettermatch.git
+git clone -b v9 https://github.com/sugarlabs/lettermatch.git
 
 #- 4 -
 # TuxPaint
@@ -19,11 +19,11 @@ git clone https://github.com/sugarlabs/tuxpaint-wrapper-activity.git
 
 #- 5 -
 # Turtle Typing Activity
-git clone https://github.com/sugarlabs/typing-turtle-activity.git
+git clone -b v32 https://github.com/sugarlabs/typing-turtle-activity.git
 
 #- 7 -
 # xoeditor Artivity
-git clone https://github.com/sugarlabs/xoeditor-activity.git
+git clone -b v14 https://github.com/sugarlabs/xoeditor-activity.git
 
 #GTK2
 #-  1 -
@@ -48,16 +48,12 @@ git clone https://github.com/sugarlabs/labyrinth-activity.git
 
 #- 6 -
 # Rompecabezas Activity
-git clone https://github.com/sugarlabs/jigsaw-puzzle-branch.git
-
-#- 7 -
-#TurtleBots  Activity
-git clone https://github.com/rrojasPy/Sugar_Activities.git TurtleBots.activity
+git clone -b v11 https://github.com/sugarlabs/jigsaw-puzzle-branch.git
 
 #GTK3
 #- 1 -
 # Get Books Artivity
-git clone https://github.com/sugarlabs/get-books-activity.git
+git clone -b v19 https://github.com/sugarlabs/get-books-activity.git
 
 #- 2 -
 # Turtle confusion Activity
@@ -66,12 +62,12 @@ git clone https://github.com/sugarlabs/activity-turtle-confusion.git
 
 #-   1 -
 # Turtle Art Artivity
- git clone https://github.com/sugarlabs/turtleart-activity.git
+ git clone -b v220 https://github.com/sugarlabs/turtleart-activity.git
 
 
 #- -
 #Jclic  Activity
-git clone https://github.com/sugarlabs/JClic.git
+git clone -b v1 https://github.com/sugarlabs/JClic.git
 
 
 #-  -
