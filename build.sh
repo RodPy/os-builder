@@ -3,8 +3,7 @@
 currentuser="$(whoami)"
 
 # Install pre-requisities
-sudo apt install squashfs-tools genisoimage
-sudo apt install hashalot
+sudo apt install squashfs-tools genisoimage hashalot jq
 
 #Obtain the base system
 # 1 Download Ubuntu 20.04 desktop image in config to validate it
@@ -29,8 +28,9 @@ mkdir ~/livecdtmp
 mv ubuntu-20.04-desktop-amd64.iso ~/livecdtmp
 
 mkdir /home/$currentuser/os-builder/config/Activities
+sudo cp /home/$currentuser/os-builder/config/repository.json /home/$currentuser/os-builder/config/Activities
 cd /home/$currentuser/os-builder/config/Activities
-sh /home/$currentuser/os-builder/config/activitiesGit.sh
+bash /home/$currentuser/os-builder/config/activitiesGit.sh
 sudo cp -r /home/$currentuser/os-builder/config ~/livecdtmp
 sudo rm -r /home/$currentuser/os-builder/config/Activities/
 cd ~
