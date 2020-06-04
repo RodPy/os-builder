@@ -53,12 +53,6 @@
             "last_commit": ""
         },
         {
-            "name": "kukuanakula",
-            "link": "git://git.sugarlabs.org/kukuanakula/mainline.git",
-            "version": "",
-            "last_commit": ""
-        },
-        {
             "name": "labyrinth-activity",
             "link": "https://github.com/sugarlabs/labyrinth-activity.git",
             "version": "",
@@ -105,12 +99,6 @@
             "last_commit": ""
         },
         {
-            "name": "help-activity",
-            "link": "https://github.com/sugarlabs/help-activity.git",
-            "version": "v20",
-            "last_commit": ""
-        },
-        {
             "name": "gcompris-activity",
             "link": "https://github.com/ParaguayEduca/gcompris-activity.git",
             "version": "",
@@ -120,12 +108,6 @@
             "name": "geogebra-activity",
             "link": "https://github.com/ParaguayEduca/geogebra-activity.git",
             "version": "",
-            "last_commit": ""
-        },
-        {
-            "name": "help-activity",
-            "link": "https://github.com/sugarlabs/help-activity.git",
-            "version": "v20",
             "last_commit": ""
         },
         {
