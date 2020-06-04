@@ -1,0 +1,138 @@
+{
+    "repository": [{
+            "name": "diccionario-guarani-castellano-activity",
+            "link": "https://github.com/sugarlabs/diccionario-guarani-castellano-activity.git",
+            "version": "",
+            "last_commit": "f0001d16948e07227880cebc9be208473c652990"
+        }, {
+            "name": "help-activity",
+            "link": "https://github.com/sugarlabs/help-activity.git",
+            "version": "v20",
+            "last_commit": ""
+        },
+        {
+            "name": "lettermatch",
+            "link": "https://github.com/sugarlabs/lettermatch.git",
+            "version": "v9",
+            "last_commit": ""
+        },
+        {
+            "name": "tuxpaint-wrapper-activity",
+            "link": "https://github.com/sugarlabs/tuxpaint-wrapper-activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "typing-turtle-activity",
+            "link": "https://github.com/sugarlabs/typing-turtle-activity.git",
+            "version": "v32",
+            "last_commit": ""
+        },
+        {
+            "name": "xoeditor-activity",
+            "link": "https://github.com/sugarlabs/xoeditor-activity.git",
+            "version": "v14",
+            "last_commit": ""
+        },
+        {
+            "name": "derecho-a-transtiar-activity",
+            "link": "https://github.com/sugarlabs/derecho-a-transitar-activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "i-can-read-activity",
+            "link": "https://github.com/sugarlabs/i-can-read-activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "jam-media-explorer-activity",
+            "link": "https://github.com/sugarlabs/jam-media-explorer-activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "kukuanakula",
+            "link": "git://git.sugarlabs.org/kukuanakula/mainline.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "labyrinth-activity",
+            "link": "https://github.com/sugarlabs/labyrinth-activity.git",
+            "version": "",
+            "last_commit": ""
+        }, {
+            "name": "jigsaw-puzzle-branch",
+            "link": "https://github.com/sugarlabs/jigsaw-puzzle-branch.git",
+            "version": "v11",
+            "last_commit": ""
+        },
+        {
+            "name": "get-books-activity",
+            "link": "https://github.com/sugarlabs/get-books-activity.git",
+            "version": "v19",
+            "last_commit": ""
+        },
+        {
+            "name": "activity-turtle-confusion",
+            "link": "https://github.com/sugarlabs/activity-turtle-confusion.git",
+            "version": "",
+            "last_commit": ""
+        }, {
+            "name": "turtleart-activity",
+            "link": "https://github.com/sugarlabs/turtleart-activity.git",
+            "version": "v220",
+            "last_commit": ""
+        },
+        {
+            "name": "JClic",
+            "link": "https://github.com/sugarlabs/JClic.git",
+            "version": "v1",
+            "last_commit": ""
+        },
+        {
+            "name": "Java",
+            "link": "https://github.com/sugarlabs/Java.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "etoys.activity",
+            "link": "https://github.com/ParaguayEduca/etoys.activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "help-activity",
+            "link": "https://github.com/sugarlabs/help-activity.git",
+            "version": "v20",
+            "last_commit": ""
+        },
+        {
+            "name": "gcompris-activity",
+            "link": "https://github.com/ParaguayEduca/gcompris-activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "geogebra-activity",
+            "link": "https://github.com/ParaguayEduca/geogebra-activity.git",
+            "version": "",
+            "last_commit": ""
+        },
+        {
+            "name": "help-activity",
+            "link": "https://github.com/sugarlabs/help-activity.git",
+            "version": "v20",
+            "last_commit": ""
+        },
+        {
+            "name": "scratch-activity",
+            "link": "https://github.com/ParaguayEduca/scratch-activity.git",
+            "version": "",
+            "last_commit": ""
+        }
+    ]
+}
