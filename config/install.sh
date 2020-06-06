@@ -1,4 +1,6 @@
-#!/bin/sh root
+#!/bin/sh
+currentuser="$(whoami)"
+
 apt update
 echo "deb [trusted=yes arch=amd64]" \
     "http://dev.laptop.org/~quozl/.us focal main" \
@@ -9,6 +11,10 @@ sudo add-apt-repository -y ppa:pyeduca/pyeducadependencies
 sudo add-apt-repository -y ppa:jclic/master
 
 apt-get update
+
+#Donwload and install Scratch
+wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/descarga/Scratch_3.0.deb
+dpkg -i /home/$currentuser/os-builder/Scratch_3.0.deb
 
 #Install pyedu dependencies
 apt install -y pyedu-dependencies
