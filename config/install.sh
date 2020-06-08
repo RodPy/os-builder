@@ -1,4 +1,6 @@
-#!/bin/sh root
+#!/bin/sh
+currentuser="$(whoami)"
+
 apt update
 echo "deb [trusted=yes arch=amd64]" \
     "http://dev.laptop.org/~quozl/.us focal main" \
@@ -6,10 +8,20 @@ echo "deb [trusted=yes arch=amd64]" \
 
 sudo add-apt-repository -y ppa:pyeduca/pyeducadependencies
 
+sudo add-apt-repository -y ppa:jclic/master
+
 apt-get update
+
+#Donwload and install Scratch
+wget --no-parent --user-agent "user" -P /home/$currentuser/os-builder/ http://paraguayeduca.org/descarga/Scratch_3.0.deb
+dpkg -i /home/$currentuser/os-builder/Scratch_3.0.deb
 
 #Install pyedu dependencies
 apt install -y pyedu-dependencies
+
+#Install Pip2
+curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+python2 get-pip.py
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
